@@ -10,6 +10,7 @@ jobs:
       VERSION: ${{ github.ref_name }}
     permissions:
       contents: write
+      pull-requests: read
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-go@v5
